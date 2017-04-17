@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-archiver/archiver/lib/plugins/zip.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-archiver/node_modules/archiver/lib/plugins/zip.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-archiver">npmtest-archiver (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-archiver/archiver/lib/plugins/zip.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-archiver/node_modules/archiver/lib/plugins/zip.js</span></h1>
     <h2>
         
         Statements: <span class="metric">47.37% <small>(9 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-archiver/archiver/lib/plugins/</a> &#187; zip.js</div>
+    <div class="path"><a href="../../../../../index.html">All files</a> » <a href="index.html">node-npmtest-archiver/node_modules/archiver/lib/plugins/</a> » zip.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -463,22 +461,22 @@ var util = require('archiver-utils');
  * @param {Boolean} [options.store=false] Sets the compression method to STORE.
  * @param {Object} [options.zlib] Passed to [zlib]{@link https://nodejs.org/api/zlib.html#zlib_class_options}
  */
-var Zip = <span class="fstat-no" title="function not covered" >function(options) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!(this instanceof Zip)) {</span>
-<span class="cstat-no" title="statement not covered" >    return new Zip(options);</span>
+var Zip = <span class="fstat-no" title="function not covered">function(options) {</span>
+<span class="cstat-no" title="statement not covered">  if (!(this instanceof Zip)) {</span>
+<span class="cstat-no" title="statement not covered">    return new Zip(options);</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  options = this.options = util.defaults(options, {</span>
+<span class="cstat-no" title="statement not covered">  options = this.options = util.defaults(options, {</span>
     comment: '',
     forceUTC: false,
     store: false
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.supports = {</span>
+<span class="cstat-no" title="statement not covered">  this.supports = {</span>
     directory: true
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.engine = new engine(options);</span>
+<span class="cstat-no" title="statement not covered">  this.engine = new engine(options);</span>
 };
 &nbsp;
 /**
@@ -495,36 +493,36 @@ var Zip = <span class="fstat-no" title="function not covered" >function(options)
  * @param  {Function} callback
  * @return void
  */
-Zip.prototype.append = <span class="fstat-no" title="function not covered" >function(source, data, callback) {</span>
-<span class="cstat-no" title="statement not covered" >  this.engine.entry(source, data, callback);</span>
+Zip.prototype.append = <span class="fstat-no" title="function not covered">function(source, data, callback) {</span>
+<span class="cstat-no" title="statement not covered">  this.engine.entry(source, data, callback);</span>
 };
 &nbsp;
 /**
  * @return void
  */
-Zip.prototype.finalize = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  this.engine.finalize();</span>
+Zip.prototype.finalize = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  this.engine.finalize();</span>
 };
 &nbsp;
 /**
  * @return this.engine
  */
-Zip.prototype.on = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  return this.engine.on.apply(this.engine, arguments);</span>
+Zip.prototype.on = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  return this.engine.on.apply(this.engine, arguments);</span>
 };
 &nbsp;
 /**
  * @return this.engine
  */
-Zip.prototype.pipe = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  return this.engine.pipe.apply(this.engine, arguments);</span>
+Zip.prototype.pipe = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  return this.engine.pipe.apply(this.engine, arguments);</span>
 };
 &nbsp;
 /**
  * @return this.engine
  */
-Zip.prototype.unpipe = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  return this.engine.unpipe.apply(this.engine, arguments);</span>
+Zip.prototype.unpipe = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  return this.engine.unpipe.apply(this.engine, arguments);</span>
 };
 &nbsp;
 module.exports = Zip;
@@ -560,10 +558,11 @@ module.exports = Zip;
  * @see {@link https://archiverjs.com/zip-stream/ZipStream.html}
  */
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 12:13:55 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 11:55:24 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
