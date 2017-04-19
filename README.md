@@ -1,4 +1,7 @@
-# test coverage for  [archiver (v1.3.0)](https://github.com/archiverjs/node-archiver)  [![npm package](https://img.shields.io/npm/v/npmtest-archiver.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-archiver) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-archiver.svg)](https://travis-ci.org/npmtest/node-npmtest-archiver)
+# npmtest-archiver
+
+#### test coverage for  [archiver (v1.3.0)](https://github.com/archiverjs/node-archiver)  [![npm package](https://img.shields.io/npm/v/npmtest-archiver.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-archiver) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-archiver.svg)](https://travis-ci.org/npmtest/node-npmtest-archiver)
+
 #### a streaming interface for archive generation
 
 [![NPM](https://nodei.co/npm/archiver.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/archiver)
